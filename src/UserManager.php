@@ -24,8 +24,8 @@ class UserManager {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new InvalidArgumentException("Email invalide.");
         }
-
-        $stmt = $this->db->prepare("INSERT INTO users (name, email) VALUES (:name, :email)");
+    
+        $stmt = $this->db->prepare("INSERT INTO users (name, email, date_added) VALUES (:name, :email, NOW())");
         $stmt->execute(['name' => $name, 'email' => $email]);
     }
 

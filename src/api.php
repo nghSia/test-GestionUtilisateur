@@ -1,5 +1,6 @@
 <?php
 require_once 'UserManager.php';
+use Ngh\TpGestionUtilisateur\UserManager;
 header("Content-Type: application/json");
 
 $method = $_SERVER['REQUEST_METHOD'];
