@@ -1,0 +1,23 @@
+{
+    "name": "ngh/tp-gestion-utilisateur",
+    "require-dev": {
+        "phpunit/phpunit": "^12.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ngh\\TpGestionUtilisateur\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ngh\\tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nghS",
+            "email": "thnghia84@gmail.com"
+        }
+    ],
+    "require": {}
+}
